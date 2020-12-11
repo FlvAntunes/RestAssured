@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions(
 		features = "src/test/resources/features/",
 		glue = "steps",
-		plugin = {"pretty", "html:target/report-html.html", "json:target/report.json"},
+		plugin = {"pretty","json:target/report.json",},
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
 		publish = false,

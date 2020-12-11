@@ -26,31 +26,20 @@ public class GET {
 
 		response = RestAssured.request(Method.GET, string);
 
-
 	}
 
 	@Entao("^o status code deve ser (\\d+)$")
 	public void o_status_code_deve_ser(int arg1) throws Throwable {
 		Assert.assertEquals(arg1, response.getStatusCode());
-		// jsonpath
-		JsonPath jpath = new JsonPath(response.asString());
-		Assert.assertEquals(1, jpath.getInt("id"));
-
-		// fron
-		int id = JsonPath.from(response.asString()).getInt("id");
-		Assert.assertEquals(1, id);
-		
-
-//		System.out.println(response.getBody().asString());
 		System.out.println("Status code: " + response.getStatusCode());
 
 	}
-	
+
 	@Entao("no caminho do body da resposta {string} deve ser {string}")
 	public void noCaminhoDoBodyDaRespostaDeveSer(String string, String string2) {
-		
+
 		JsonPath jpath = new JsonPath(response.asString());
-		Assert.assertEquals(string2, jpath.get(string));
+		Assert.assertEquals(string2, jpath.get(string).toString());
 	}
 
 	@Entao("anexo o body de resposta no relatorio")
