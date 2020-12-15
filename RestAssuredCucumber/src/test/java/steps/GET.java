@@ -93,14 +93,14 @@ public class GET {
 		responseGet.then().body(string, containsString(string2));
 	}
 
-	@Entao("no caminho da lista {string} possui o item {string}")
-	public void noCaminhoDaListaPossuiOItem(String string, String string2) {
+	@Entao("no caminho da lista {string} contem o item {string}")
+	public void noCaminhoDaListaContemOItem(String string, String string2) {
 		// Validando se possui um item na lista
 		responseGet.then().body(string, Matchers.hasItem(string2));
 	}
 	
-	@Entao("no caminho da lista {string} possui os itens {string} e {string}")
-	public void noCaminhoDaListaPossuiOsItensE(String string, String string2, String string3) {
+	@Entao("no caminho da lista {string} contem os itens {string} e {string}")
+	public void noCaminhoDaListaContemOsItensE(String string, String string2, String string3) {
 		responseGet.then().body(string, Matchers.hasItems(string2, string3));
 	}
 
