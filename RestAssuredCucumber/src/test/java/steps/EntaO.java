@@ -15,6 +15,7 @@ import io.cucumber.java.pt.Entao;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
+
 //import steps.QuandO;
 
 public class EntaO {
@@ -45,6 +46,7 @@ public class EntaO {
 		// Para anexar texto no relatorio
 		// scenario.attach(response.prettyPrint(), "text/plain", "obs");
 		scenario.attach(response.getBody().asString(), "application/json", "obs");
+
 
 	}
 
