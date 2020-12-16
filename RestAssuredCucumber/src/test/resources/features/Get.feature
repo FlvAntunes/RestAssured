@@ -1,12 +1,12 @@
 #language:pt
 Funcionalidade: Teste utilizando GET
 
-Contexto:
-Dado que minha URL base é "https://jsonplaceholder.typicode.com/"
+  Contexto: 
+    Dado que minha URL base é "https://jsonplaceholder.typicode.com/"
 
   Cenario: 1 - Testando primeiro Nivel
     Quando realizar um "get" na URL "https://jsonplaceholder.typicode.com/users/1"
-    #Entao o status code deve ser 200
+    Entao o status code deve ser 200
     E anexo o body de resposta no relatorio
     E no caminho "id" do body da resposta deve ser o inteiro 1
     E no caminho "username" do body da resposta deve ser a string "Bret"

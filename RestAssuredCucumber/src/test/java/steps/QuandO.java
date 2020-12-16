@@ -2,6 +2,7 @@ package steps;
 
 import io.cucumber.java.pt.Quando;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 
@@ -23,7 +24,7 @@ public class QuandO {
 			
 		
 		if (string.equals("post")||string.equals("POST")) {
-			response = RestAssured.given().contentType("application/json").body(body).post(string2);
+			response = RestAssured.given().contentType(ContentType.JSON).body(body).post(string2);
 			response.then().log().all();
 		}
 		}

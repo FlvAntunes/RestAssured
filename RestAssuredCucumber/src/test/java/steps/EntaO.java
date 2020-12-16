@@ -5,6 +5,8 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.hasItems;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.nullValue;
 
 import org.junit.Assert;
 
@@ -19,12 +21,10 @@ public class EntaO {
 
 	private Response response = steps.QuandO.response;
 	private Scenario scenario = BeforeAfter.getScenario();
-	
+
 	@Entao("^o status code deve ser (\\d+)$")
 	public void o_status_code_deve_ser(int arg1) throws Throwable {
 		response.then().statusCode(arg1);
-	
-
 
 	}
 
@@ -45,8 +45,6 @@ public class EntaO {
 		// Para anexar texto no relatorio
 		// scenario.attach(response.prettyPrint(), "text/plain", "obs");
 		scenario.attach(response.getBody().asString(), "application/json", "obs");
-
-		
 
 	}
 
@@ -94,5 +92,15 @@ public class EntaO {
 		// Validando se possui um item na lista
 		response.then().body(string, hasItems(string2, string3));
 	}
+
+	@Entao("no caminho {string} do body da resposta nao deve ser nulo")
+	public void noCaminhoDoBodyDaRespostaNaoDeveSerNulo(String string) {
+		response.then().body(string, notNullValue());
+	}
 	
+	@Entao("no caminho {string} do body da resposta deve ser nulo")
+	public void noCaminhoDoBodyDaRespostaDeveSerNulo(String string) {
+		response.then().body(string, nullValue());
+	}
+
 }

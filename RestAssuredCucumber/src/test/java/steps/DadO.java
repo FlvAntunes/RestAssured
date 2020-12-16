@@ -17,7 +17,7 @@ public class DadO {
 
 	@Dado("que o body Json contem {string}")
 	public void que_o_body_json_contem(String string) {
-		body = "{ \"name\": \"jose\", \"age\":50}";
+		body = string;
 	}
 	
 	
