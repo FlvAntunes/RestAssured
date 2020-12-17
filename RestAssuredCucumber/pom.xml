@@ -32,13 +32,13 @@
 					<skip>false</skip>
 					<customPageTitle>My Report</customPageTitle>
 					<failScenariosOnPendingOrUndefinedSteps>true</failScenariosOnPendingOrUndefinedSteps>
-					<startPage>ALL_FEATURES</startPage>
+					<startPage>ALL_SCENARIOS</startPage>
 					<sourceJsonReportDirectory>${project.build.directory}</sourceJsonReportDirectory>
 					<generatedHtmlReportDirectory>${project.build.directory}/generated-report</generatedHtmlReportDirectory>
 					<logLevel>off</logLevel>
 					<customParameters>
 						<Custom_Parameter>POC RestAssured com Cucumber</Custom_Parameter>
-						<Custom_URL>http://www.google.com</Custom_URL>
+						<Custom_URL>https://github.com/FlvAntunes?tab=repositories</Custom_URL>
 						<_Text>POC simples de exemplo do RestAssured com Cucumber</_Text>
 					</customParameters>
 				</configuration>
