@@ -19,7 +19,7 @@ public class QuandO {
 		} else {
 
 			if (string.equals("post") || string.equals("POST")) {
-				response = RestAssured.given().contentType(ContentType.JSON).body(body).post(string2);
+				response = RestAssured.given().contentType("application/json; charset=UTF-8").body(body).post(string2);
 				response.then().log().all();
 			} else {
 				if (string.equals("put") || string.equals("PUT")) {
