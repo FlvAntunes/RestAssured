@@ -1,10 +1,14 @@
-# Rest-assured
+![Rest-Assured Logo](imgs/Rest-assured.png)
 
-Essa é uma POC simples de ambiente para trabalhar com Rest-assured
+<br>
+# POC Rest-assured
+
+Essa é uma POC simples de um ambiente de teste para se trabalhar com Rest-assured.
+
 
 ___
-
-O Rest-assured é uma biblioteca Java que fornece uma linguagem específica de domínio (DSL) para escrever testes poderosos para APIs e se integra perfeitamente com o JUnit.
+**Sobre**
+O Rest-assured é uma biblioteca Java que fornece uma linguagem específica de domínio (DSL) para facilitar a criação de testes automatizados de APIs REST.Ele tambem e se integra perfeitamente com o JUnit.
 
 ___
 ## Modelos neste repositório
