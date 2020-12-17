@@ -1,5 +1,4 @@
-![Rest-Assured Cucumber Logo](imgs/RestassuredCucumber.png)
-#
+![Rest-Assured Cucumber Logo](imgs/RestassuredCucumberr.png)
 # Rest-assured com Cucumber
 
 Este é um modelo simples de um projeto Maven para teste de API REST. Utilizei os frameworks Rest-Assured e o Cucumber para organizar os cenários de teste na linguagem Gherkin.
