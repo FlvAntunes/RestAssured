@@ -1,6 +1,5 @@
 ![Rest-Assured Cucumber Logo](imgs/RestassuredCucumber.png)
-<ls>
-
+#
 # Rest-assured com Cucumber
 
 Este é um modelo simples de um projeto Maven para teste de API REST. Utilizei os frameworks Rest-Assured e o Cucumber para organizar os cenários de teste na linguagem Gherkin.
@@ -36,8 +35,8 @@ mvn install
 ```
 
 Após a execução dos testes, um relatório em HTML é gerado na pasta `target\generated-report`. Dentro desta pasta abra o arquivo `index.html` para visualizar o relatório no seu browser e acessar todos os detalhes da execução.
-<ls>
-<ls>
+#
+
 ![report](imgs/report.png)
 
 
@@ -59,7 +58,7 @@ Após essa execução, o relatório de teste não será atualizado automaticamen
 mvn cluecumber-report:reporting
 ```
 ___
-#Referencias
+#Referências
 
 
 - [Rest-assured](https://rest-assured.io/)
