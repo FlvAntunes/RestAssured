@@ -13,5 +13,5 @@ Abaixo segue os links dos exemplos que você irá encontrar neste repositório.
 Neles você também irá encontrar detalhes sobre como executá-los.
 
 - **Rest-assured**
-  - * [Rest-assured com Cucumber](RestassuredCucumber).
-  - * [Rest-assured]().
+  - * [Rest-assured com Cucumber](RestAssuredCucumber).
+  - * [Rest-assured (Em desenvolvimento)]().
