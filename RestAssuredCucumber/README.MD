@@ -34,6 +34,7 @@ mvn install
 ```
 
 Após a execução dos testes, um relatório em HTML é gerado na pasta `target\generated-report`. Dentro desta pasta abra o arquivo `index.html` para visualizar o relatório no seu browser e acessar todos os detalhes da execução.
+Ele deve ser exibido conforme abaixo:
 #
 
 ![report](imgs/report.png)
@@ -57,7 +58,7 @@ Após essa execução, o relatório de teste não será atualizado automaticamen
 mvn cluecumber-report:reporting
 ```
 ___
-#Referências
+# Referências
 
 
 - [Rest-assured](https://rest-assured.io/)
