@@ -20,15 +20,15 @@ public class QuandO {
 
 			if (string.equals("post") || string.equals("POST")) {
 				response = RestAssured.given().contentType("application/json; charset=UTF-8").body(body).post(string2);
-				response.then().log().all();
+				
 			} else {
 				if (string.equals("put") || string.equals("PUT")) {
 					response = RestAssured.given().contentType(ContentType.JSON).body(body).put(string2);
-					response.then().log().all();
+					
 				} else {
 					if (string.equals("delete") || string.equals("DELETE")) {
 						response = RestAssured.delete(string2);
-						response.then().log().all();
+						
 					}
 				}
 			}
